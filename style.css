@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*Fonte KoHo*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size:16px;
+    box-sizing: border-box;
+}
+
+.nav-placeholder{
+    display:flex;
+    padding: 0 2em;
+    width: auto;
+    min-height: 7em;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+main{
+    width: 100%;
+    margin:auto;
+}
+
+.container{
+    min-width: 100%;
+    background: linear-gradient(to right, #592EF2, #331B8C);
+    color: white;
+    padding: 25vh;
+}
+
+.container__text{
+    text-align: justify;
+    margin: 0 10%;
+    max-width: 627px;
+    font-size: 1.2rem;
+}
+
+.container__text h1{
+    max-width:20em;
+    font-size: 2.1rem;
+}
+
+.audio-player{
+    margin: 2em 0;
+    width:1rem;
+    padding: 1.5em 6.5em;
+    border-radius: 25px;
+    background-color: #987FF2;
+}
+
+.input-container{
+    text-align: center;
+    width: 80%;
+    margin: 4em auto;
+}
+
+.main__input{
+    width: 25rem;
+}
+
+.main__title{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    color: #4400ff;
+}
+
+.aulas{
+    margin: 1em auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 0.28fr 0.28fr 0.28fr;
+    gap:0.6rem;
+    justify-content: center;
+    text-align: center;
+    padding:1em 0;
+}
+
+.aulas__grid{
+    border:#7c58ff solid 3.5px;
+    border-radius: 15px;
+    width:auto;
+    background-color: rgb(255, 255, 255);
+    /* border:2px red solid; */
+}
+
+/*
+#########################################
+#################FOOTER##################
+#########################################
+*/
+
+
+/*Caixa roxa que engloba os elementos*/
+footer { 
+    font-family: "KoHo";
+    width: auto;
+    background: linear-gradient(to right, #592EF2, #331B8C);
+    color: white;
+}
+
+/*Elemento filho do footer, serve para alinhamento*/
+address{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+/*alinhamento individual dos ícones*/
+.icon{
+    width:3.125rem;
+    height:3.125rem;
+}
+
+/*Sombra do "ajuda" e "Contato" à direita do footer*/
+.text-outline{
+    font-family: "KoHo";
+    font-weight: 500;
+    text-shadow: 
+        0em 0em 0.5em black,
+        -0em 0em 0.5em black,
+        0em -0em 0.5em black,
+        -0em -0em 0.5em black,
+        0 0 0.5em black;
+}
+
+/*Função link dos elementos embaixo do "Ajuda"*/
+.link{
+    text-decoration: none;
+    color:white;
+}
+
+/*Faz mudar a cor dos links do "Ajuda"*/
+.link:hover{
+    text-decoration: underline;
+    color: rgb(224, 190, 255);
+}
+
+/*Tira a underline dos icones das nossas redes*/
+.link-icons{
+    text-decoration: none;
+}
+
+/*Faz aparecer a underline*/
+.link-icons:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/*Fundo branco e arredondamento do icone do Twitter (fundo transparente, o X fica roxo)*/
+.x{
+    background-color: white; 
+    border-radius: 20%;
+}
+/*Alinhamento dos elementos da direita*/
+.alignment{
+    padding-top: 1em;
+    padding-inline: 2em;
+}
+
+/*Alinhamento dos ícones à esquerda (ícones)*/
+.alignment-icons{
+    padding-top: 1em;
+    padding-inline: 1em;
+}
+
+/*
+##############################################
+############### MEDIA QUERIES ################
+##############################################
+*/
+
+@media screen and (min-width: 1400px){
+    html{
+        font-size:20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    html{
+        font-size:24px;
+    }
+
+    address{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 706px){
+    html{
+        font-size:17px;
+    }
+
+    address{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 506px){
+    html{
+        font-size:12px;
+    }
+
+    address{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 352px){
+    html{
+        font-size:10px;
+    }
+
+    address{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+    }
+}
