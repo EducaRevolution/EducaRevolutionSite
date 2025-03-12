@@ -38,7 +38,7 @@ main{
     text-align: justify;
     margin: 0 10%;
     max-width: 627px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .container__text h1{
@@ -47,10 +47,10 @@ main{
 }
 
 .audio-player{
-    margin: 2em 0;
+    margin: 0.5em 0;
     width:1rem;
-    padding: 1.5em 6.5em;
-    border-radius: 25px;
+    padding: 1.6em 1.6em;
+    border-radius: 100px;
     background-color: #987FF2;
 }
 
@@ -62,6 +62,7 @@ main{
 
 .main__input{
     width: 25rem;
+    border-radius: 100px;
 }
 
 .main__title{
@@ -75,19 +76,38 @@ main{
     margin: 1em auto;
     width: 80%;
     display: grid;
-    grid-template-columns: 0.28fr 0.28fr 0.28fr;
+    grid-template-columns: repeat(3, 0.20fr);
     gap:0.6rem;
     justify-content: center;
     text-align: center;
     padding:1em 0;
+
 }
 
 .aulas__grid{
     border:#7c58ff solid 3.5px;
     border-radius: 15px;
     width:auto;
+    max-width: 20em;
+    min-height: 21em;
     background-color: rgb(255, 255, 255);
+    padding: 1em;
+    text-align: center;
     /* border:2px red solid; */
+}
+
+.grid__title{
+    margin:0.8em 0 0;
+}
+
+.grid__text{
+    margin:1em 0;
+    text-align: justify;
+}
+
+.grid__img{
+    width: 15em;
+    max-height: 9.3em;
 }
 
 /*
@@ -180,13 +200,20 @@ address{
 
 @media screen and (min-width: 1400px){
     html{
-        font-size:20px;
+        font-size:32px;
+    }
+
+    .container__text{
+        text-align: justify;
+        margin: 0 10%;
+        max-width: 1255px;
+        font-size: 1.4rem;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     html{
-        font-size:24px;
+        font-size:14px;
     }
 
     address{
@@ -198,9 +225,29 @@ address{
     }
 }
 
-@media screen and (max-width: 706px){
+@media screen and (max-width: 950px){
     html{
-        font-size:17px;
+        font-size:15px;
+    }
+
+    .aulas{
+        margin: 1em auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 0.28fr);
+        gap:0.6rem;
+        justify-content: center;
+        text-align: center;
+        padding:1em 0;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 700px){
+    html{
+        font-size:19px;
     }
 
     address{
@@ -210,23 +257,21 @@ address{
         flex-direction: column;
         padding: 1rem;
     }
-}
 
-@media screen and (max-width: 506px){
-    html{
-        font-size:12px;
-    }
+    .aulas{
+        margin: 1em auto;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, 0.28fr);
+        gap:0.6rem;
+        justify-content: center;
+        text-align: center;
+        padding:1em 0;
 
-    address{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1rem;
     }
 }
 
-@media screen and (max-width: 352px){
+@media screen and (max-width: 500px){
     html{
         font-size:10px;
     }
