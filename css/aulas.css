@@ -130,9 +130,10 @@ main{
 .container__text{
     text-align: justify;
     margin: 0 10%;
-    max-width: 627px;
+    max-width: 666px;
     font-size: 1.4rem;
 }
+
 
 .container__text h1{
     max-width:20em;
@@ -140,23 +141,48 @@ main{
 }
 
 .audio-player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
     margin: 0.5em 0;
-    width:1rem;
     padding: 1.6em 1.6em;
-    border-radius: 100px;
+    border-radius: 1000px;
     background-color: #987FF2;
 }
 
+.audio-player__image{
+    width: 2rem;
+    height: auto;
+}
+
+
 .input-container{
-    border: red 2px solid;
     text-align: center;
     width: 90%;
-    margin: 4em auto;
+    margin: 3em auto;
 }
 
 .main__input{
-    width: 20em;
+    min-width: 23em;
+    max-width: 33em;
+    padding:0.29rem;
     border-radius: 100px;
+}
+
+.btn__input{
+    background-color: #592EF2;
+    border: 0;
+    border-radius: 100px;
+    padding: 0.3rem 1em;
+    margin-left: 1rem;
+    color: white;
+}
+
+.input__image{
+    width:1.4rem;
+    height: auto;
 }
 
 .main__title{
@@ -188,6 +214,11 @@ main{
     /* border:2px red solid; */
 }
 
+.grid__img{
+    width: 15em;
+    max-height: 9.3em;
+}
+
 .grid__title{
     margin:0.8em 0 0;
 }
@@ -197,9 +228,9 @@ main{
     text-align: justify;
 }
 
-.grid__img{
-    width: 15em;
-    max-height: 9.3em;
+.grid__buttons{
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -335,7 +366,7 @@ address{
     }
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 800px){
     html{
         font-size:16px;
     }
