@@ -124,20 +124,20 @@ main{
     min-width: 100%;
     background: linear-gradient(to right, #592EF2, #331B8C);
     color: white;
-    padding: 25vh;
+    padding: 16vh;
 }
 
 .container__text{
     text-align: justify;
     margin: 0 10%;
-    max-width: 666px;
-    font-size: 1.4rem;
+    width: 33%;
+    font-size: 1.3rem;
 }
 
 
 .container__text h1{
-    max-width:20em;
-    font-size: 2.1rem;
+    width: 100%;
+    font-size: 1.5em;
 }
 
 .audio-player{
@@ -153,43 +153,69 @@ main{
 }
 
 .audio-player__image{
-    width: 2rem;
+    width: 2.4rem;
     height: auto;
 }
 
 
-.input-container{
-    text-align: center;
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
-    margin: 3em auto;
+    margin: 2.5rem auto;
 }
 
-.main__input{
-    min-width: 23em;
-    max-width: 33em;
-    padding:0.29rem;
+.main__search{
+    display: flex;
+    justify-content: space-between;
+    min-width: 21em;
+    max-width: 36em;
+    border: 2px solid black;
     border-radius: 100px;
 }
 
-.btn__input{
+.search__input{
+    width: 20rem;
+    padding: 0.7rem;
+    border-radius: 100px;
+    text-wrap: nowrap;
+    border:0;
+}
+
+.search__input:active, .search__input:focus, .search__input:hover, .search__input:empty{
+    border: none;
+    outline: none;
+}
+
+.btn__input-search{
+    background-color: #592EF2;
+    border: 0;
+    border-radius: 0 100px 100px 0;
+    padding: 0.3rem 1.7rem;
+    color: white;
+}
+
+.btn__input-talk{
     background-color: #592EF2;
     border: 0;
     border-radius: 100px;
-    padding: 0.3rem 1em;
+    padding: 0.5rem;
     margin-left: 1rem;
     color: white;
 }
 
 .input__image{
-    width:1.4rem;
+    width:2.2rem;
     height: auto;
 }
 
 .main__title{
     text-align: center;
     width: 80%;
-    margin: auto;
+    margin: 4rem auto;
     color: #4400ff;
+
 }
 
 .aulas{
@@ -206,8 +232,7 @@ main{
 .aulas__grid{
     border:#7c58ff solid 3.5px;
     border-radius: 15px;
-    width:21rem;
-    min-height: 21em;
+    width:20rem;
     background-color: rgb(255, 255, 255);
     padding: 1em;
     text-align: center;
@@ -215,8 +240,8 @@ main{
 }
 
 .grid__img{
-    width: 15em;
-    max-height: 9.3em;
+    width: 18em;
+    max-height: 10em;
 }
 
 .grid__title{
@@ -226,11 +251,26 @@ main{
 .grid__text{
     margin:1em 0;
     text-align: justify;
+    font-size: 1.3rem;
 }
 
 .grid__buttons{
     display: flex;
     justify-content: space-around;
+}
+
+.buttons__anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 100px;
+    background-color: #592EF2;
+}
+
+.buttons__icon{
+    color: white;
+    width: 2.4rem;
 }
 
 
@@ -325,9 +365,19 @@ address{
     html{
         font-size:18px;
     }
+
+    .aulas__grid{
+        border:#7c58ff solid 3.5px;
+        border-radius: 15px;
+        width:23rem;
+        background-color: rgb(255, 255, 255);
+        padding: 1em;
+        text-align: center;
+        /* border:2px red solid; */
+    }
 }
 
-@media screen and (max-width: 1090px){
+@media screen and (max-width: 1040px){
     html{
         font-size:14px;
     }
@@ -356,14 +406,7 @@ address{
         text-align: center;
         padding:1em 0;
     }
-    
-    address{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1rem;
-    }
+
 }
 
 @media screen and (max-width: 800px){
@@ -391,25 +434,13 @@ address{
     }
     
 
-    address{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1rem;
-    }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 560px){
     html{
         font-size:12px;
     }
 
-    address{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 1rem;
-    }
+
 }
+
