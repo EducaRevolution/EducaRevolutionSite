@@ -1,1 +1,0 @@
-Todas as alterações e conselhos escrevam aqui por favor
