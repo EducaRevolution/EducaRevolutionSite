@@ -148,6 +148,14 @@ main{
     background-color: #987FF2;
 }
 
+.audio-player:hover{
+    background-color: #d0c3fd;
+}
+
+.audio-player:active{
+    background-color: #805ff8;
+}
+
 .audio-player__image{
     width: 2.4rem;
     height: auto;
@@ -173,7 +181,7 @@ main{
 }
 
 .search__input{
-    width: 20rem;
+    width: 29rem;
     padding: 0.7rem;
     border-radius: 100px;
     text-wrap: nowrap;
@@ -193,6 +201,14 @@ main{
     color: white;
 }
 
+.btn__input-search:hover{
+    background-color: #805ff8;
+}
+
+.btn__input-search:active{
+    background-color: #baa7ff;
+}
+
 .btn__input-talk{
     background-color: #592EF2;
     border: 0;
@@ -200,6 +216,14 @@ main{
     padding: 0.5rem;
     margin-left: 1rem;
     color: white;
+}
+
+.btn__input-talk:hover{
+    background-color: #805ff8;
+}
+
+.btn__input-talk:active{
+    background-color: #baa7ff;
 }
 
 .input__image{
@@ -257,7 +281,9 @@ main{
 }
 
 .buttons__anchor{
+    z-index: 0;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     padding: 0.6rem;
@@ -265,10 +291,29 @@ main{
     background-color: #592EF2;
 }
 
+.buttons__anchor:hover{
+    background-color: #805ff8;
+}
+
+.buttons__anchor:active{
+    background-color: #baa7ff;
+}
+
 .buttons__icon{
-    color: white;
     width: 2.4rem;
 }
+
+.buttons__icon-yellow-star{
+    position: absolute;
+    width: 2.4rem;
+    z-index: 1;
+}
+
+.buttons__icon-white-star{
+    width: 2.4rem;
+    z-index: 2;
+}
+
 
 
 
