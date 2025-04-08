@@ -15,40 +15,19 @@
 
 <body>
 
-   <!-- barra de navegação do site -->
-   <nav class="navbar px-5 ">
-
-
-    <div class="logo">
-        EDUCA REVOLUTION
-    </div>
-    
-    <button aria-controls="navigation" aria-expanded="false" class="mobile-toggle">
-
-        <i class="fa-solid fa-bars"></i>
-        
-        
-        <span class="sr-only">
-            Menu
-        </span>
-        
-    </button>
-    
-    <ul class="nav-links mx-4">
-        
-        <img class="nav-logo" src="imagens/sair.png">
-
-        <li class="mobile-spacing"><a href="home.html" class="nav-item">HOME</a></li>
-        <li class="mobile-spacing"><a href="aulas.html" class="nav-item">AULAS</a></li>
-        <li class="mobile-spacing"><a href="menu.html" class="nav-item">MENU</a></li>
-        <li class="mobile-spacing"><a href="perfil.html" class="nav-item special">PERFIL</a></li>
-        <li class="mobile-spacing"><a href="premium.html" class="nav-item premium">PLANOS</a></li>
-
-
-    </ul>
-    
-
-</nav>
+    <!-- barra de navegação do site -->
+    <nav class="navbar">
+        <div class="logo">
+            EDUCA REVOLUTION
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="nav-item">HOME</a></li>
+            <li><a href="aulas.html" class="nav-item">AULAS</a></li>
+            <li><a href="menu.html" class="nav-item">MENU</a></li>
+            <li><a href="perfil.html" class="nav-item special">PERFIL</a></li>
+            <li><a href="premium.html" class="nav-item premium">PLANOS</a></li>
+        </ul>
+    </nav>
 
     <!-- Conteudo da pagina -->
     <main>
@@ -296,6 +275,91 @@
     </div>
     
 </div>
+
+
+<h1>🦻 Leitor de Tela Acessível</h1>
+<p>Este site possui um leitor para pessoas com deficiência visual. Use os botões abaixo ou pressione <strong>ALT + L</strong> para iniciar a leitura.</p>
+
+<div style="display: flex; gap: 10px; align-items: center;">
+    <button class="buttonLP" onclick="lerPagina()">
+      <svg
+        viewBox="0 0 16 16"
+        class="bi bi-lightning-charge-fill"
+        fill="currentColor"
+        height="13"
+        width="1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        </path></svg>
+      🔊 Ler a Página
+    </button>
+  
+    <button class="buttonLP" onclick="pararLeitura()">
+      <svg
+        viewBox="0 0 16 15"
+        class="bi bi-lightning-charge-fill"
+        fill="currentColor"
+        height="13"
+        width="1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        </path></svg>
+      🛑 Parar Leitura
+    </button>
+</div>
+  
+
+<br>
+
+<script>
+    let leituraAtiva = false;
+    let observer;
+
+    function lerPagina() {
+        leituraAtiva = true;
+        let texto = document.body.innerText;
+        let fala = new SpeechSynthesisUtterance(texto);
+        fala.lang = "pt-BR";
+        fala.rate = 1;
+        fala.pitch = 1;
+
+        speechSynthesis.speak(fala);
+    }
+
+    function pararLeitura() {
+        leituraAtiva = false;
+        speechSynthesis.cancel();
+    }
+
+        // Se a leitura estiver ativa, ler o novo conteúdo
+        if (leituraAtiva) {
+            let fala = new SpeechSynthesisUtterance(novoTexto.textContent);
+            fala.lang = "pt-BR";
+            speechSynthesis.speak(fala);
+        }
+
+    // Observa mudanças no conteúdo da página e lê automaticamente
+    function iniciarObservador() {
+        observer = new MutationObserver(mutations => {
+            if (leituraAtiva) {
+                mutations.forEach(mutation => {
+                    mutation.addedNodes.forEach(node => {
+                        if (node.nodeType === Node.TEXT_NODE || node.nodeType === Node.ELEMENT_NODE) {
+                            let fala = new SpeechSynthesisUtterance(node.textContent);
+                            fala.lang = "pt-BR";
+                            speechSynthesis.speak(fala);
+                        }
+                    });
+                });
+            }
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
+
+    // Iniciar observação automática de mudanças no conteúdo
+    iniciarObservador();
+</script>
 
 
 <footer class="text-white"> <!-- Caixa Roxa - Container -->

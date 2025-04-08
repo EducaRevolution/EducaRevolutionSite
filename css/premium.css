@@ -129,45 +129,146 @@ body {
     margin-top: 5vh;
 }
 
-/*tabela dos planos*/ 
-table {
-    width: 70%;
-    margin: auto;
-    border-collapse: collapse;
-}
-th, td {
-    border: 2px solid #000;
-    padding: 10px;
-    text-align: center;
-    font-size: 15pt;
-}
-th {
-    background-color: #ffffff;
+.tabela-planos {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin-top: 5vh;
 }
 
-/* ATENÇÃO está premium2 porque só premium entra em conflito com o premium da navbar */
-.premium2 {
-    background-color: #4b0082;
-    color: white;
-}
-.premium2 a.subscribe {
+table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
     background-color: white;
-    color: #4b0082;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 1vh;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-.check, .cross {
-    font-size: 35px;
+
+/* Cabeçalho */
+thead th {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background: #fff;
+    /* border-bottom: 2px solid #ccc; */
 }
-.check {
+
+/* Toda a coluna Premium com fundo roxo */
+table td:nth-child(3),
+table th:nth-child(3) {
+    background-color: #dcd1ff;
+}
+
+/* Células */
+tbody td {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #666;
+}
+
+tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+/* Ícones ✓ ✗ */
+.sim {
     color: green;
+    font-size: 1.5rem;
 }
-.cross {
+
+.nao {
     color: red;
+    font-size: 1.5rem;
 }
+
+/* Estilo do título da coluna Premium */
+.col-premium .titulo-premium {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Preço com fundo escuro */
+.col-premium .preco {
+    background: #2b0f80;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Botão Assinar */
+.col-premium .btn-assinar {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #2b0f80;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+.buttonLP {
+    --bezier: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --edge-light: hsla(0, 0%, 50%, 0.8);
+    --text-light: rgba(255, 255, 255, 0.4);
+    --back-color: 240, 40%;
+  
+    cursor: pointer;
+    padding: 0.7em 1em;
+    border-radius: 0.5em;
+    min-height: 2.4em;
+    min-width: 3em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: bold;
+  
+    background: linear-gradient(
+      140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    color: hsla(0, 0%, 90%);
+    border: 0;
+    box-shadow: inset 0.4px 1px 4px var(--edge-light);
+  
+    transition: all 0.1s var(--bezier);
+  }
+  
+  .buttonLP:hover {
+    --edge-light: hsla(0, 0%, 50%, 1);
+    text-shadow: 0px 0px 10px var(--text-light);
+    box-shadow: inset 0.4px 1px 4px var(--edge-light),
+      2px 4px 8px hsla(0, 0%, 0%, 0.295);
+    transform: scale(1.1);
+  }
+  
+  .button:active {
+    --text-light: rgba(255, 255, 255, 1);
+  
+    background: linear-gradient(
+      140deg,
+      hsla(var(--back-color), 50%, 1) min(2em, 20%),
+      hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
+    );
+    box-shadow: inset 0.4px 1px 8px var(--edge-light),
+      0px 0px 8px hsla(var(--back-color), 50%, 0.6);
+    text-shadow: 0px 0px 20px var(--text-light);
+    color: hsla(0, 0%, 100%, 1);
+    letter-spacing: 0.1em;
+    transform: scale(1);
+  }
 
 /* footer */
 
