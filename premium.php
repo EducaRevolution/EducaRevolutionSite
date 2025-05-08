@@ -3,77 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Premium</title>
+    <link rel="stylesheet" href="css/premium.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
 
-   <!-- barra de navegação do site -->
-   <nav class="navbar px-5 ">
+     <!-- barra de navegação do site -->
+     <nav class="navbar px-5 ">
 
-    <div class="logo">
-        EDUCA REVOLUTION
-    </div>
+        <div class="logo">
+            EDUCA REVOLUTION
+        </div>
+        
+        <button aria-controls="navigation" aria-expanded="false" class="mobile-toggle">
     
-    <button aria-controls="navigation" aria-expanded="false" class="mobile-toggle">
-
-        <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
+            
+            
+            <span class="sr-only">
+                Menu
+            </span>
+            
+        </button>
         
         
-        <span class="sr-only">
-            Menu
-        </span>
-        
-    </button>
-    
-    
-    <ul aria-expanded="false" id="navigation" class="nav-links mx-4">
-        
-        <img aria-hidden="true" class="nav-logo" src="imagens/nav-logo.png">
-        
-        <li class="mobile-spacing"><a href="home.html" class="nav-item">HOME</a></li>
-        <li class="mobile-spacing"><a href="aulas.html" class="nav-item">AULAS</a></li>
-        <li class="mobile-spacing"><a href="menu.html" class="nav-item">MENU</a></li>
-        <li class="mobile-spacing"><a href="perfil.html" class="nav-item special">PERFIL</a></li>
-        <li class="mobile-spacing"><a href="premium.html" class="nav-item premium">PLANOS</a></li>
-        
-    </ul>
-    
-    
-</nav>
-
-<!--esta div é o fundo preto que aparece quando abre-se o menu do MOBILE. -->
-<div class="nav-overlay"></div>
-
-
-    <!-- Parte do menu -->
-    
-    <div class="sidebar">
-        <h2>Menu</h2>
-        <ul>
-            <li><a href="#" onclick="loadContent('usuario')">Configuração de Usuário </a></li>
-            <li><a href="#" onclick="loadContent('plano')">Configuração de Planos </a></li>
-            <li><a href="#" onclick="loadContent('download')">Historico de download </a></li>
-            <li><a href="#" onclick="loadContent('haulas')">Historico de aulas </a></li>
-            <li><a href="#" onclick="loadContent('servico')">Termos de uso e serviço </a></li>
-            <li><a href="#" onclick="loadContent('sobsite')">Sobre o site </a></li>
-            <li><a href="#" onclick="loadContent('suporte')">Suporte </a></li> 
+        <ul aria-expanded="false" id="navigation" class="nav-links mx-4">
+            
+            <img aria-hidden="true" class="nav-logo" src="imagens/nav-logo.png">
+            
+            <li class="mobile-spacing"><a href="home.php" class="nav-item">HOME</a></li>
+            <li class="mobile-spacing"><a href="aulas.php" class="nav-item">AULAS</a></li>
+            <li class="mobile-spacing"><a href="menu.php" class="nav-item">MENU</a></li>
+            <li class="mobile-spacing"><a href="perfil.php" class="nav-item special">PERFIL</a></li>
+            <li class="mobile-spacing"><a href="premium.php" class="nav-item premium">PLANOS</a></li>
+            
         </ul>
-    </div>
-    <div class="content" id="content">
-        <h2>Bem-vindo às Configurações</h2>
-        <p>Selecione uma opção no menu para visualizar mais detalhes.</p>
-    </div>
-      <!-- Rodape -->
+        
+        
+    </nav>
+    
+    <!--esta div é o fundo preto que aparece quando abre-se o menu do MOBILE. -->
+    <div class="nav-overlay"></div>
+
+<section class="sec_titulo">
+    <h1>Planos</h1>
+</section>
+<section class="sec_planos">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Gratuito</th>
+                <th class="premium2">Premium<br>R$ 12,00/mês<br><a href="#" class="subscribe">Assinar</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atendimento prioritário no fórum e suporte</td>
+                <td class="cross">✗</td>
+                <td class="check">✓</td>
+            </tr>
+            <tr>
+                <td>Download ilimitado</td>
+                <td>Máximo de 5 downloads</td>
+                <td class="check">✓</td>
+            </tr>
+            <tr>
+                <td>Mensagens ilimitadas no fórum</td>
+                <td>Máximo de 3 mensagens</td>
+                <td class="check">✓</td>
+            </tr>
+            <tr>
+                <td>Sem Anúncios</td>
+                <td class="cross">✗</td>
+                <td class="check">✓</td>
+            </tr>
+            <tr>
+                <td>Vídeos exclusivos</td>
+                <td class="cross">✗</td>
+                <td class="check">✓</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
 
 
 <footer class="text-white"> <!-- Caixa Roxa - Container -->
 
 
-    <address> <!-- Tag para endereços e contatos, usada para enquadramento -->
+    <address class="m-0"> <!-- Tag para endereços e contatos, usada para enquadramento -->
     
     <div class="d-flex flex-row">
 
@@ -134,6 +156,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="js/menu.js"></script> 
+
+<script src="js/premium.js"></script>
+
 </body>
 </html>

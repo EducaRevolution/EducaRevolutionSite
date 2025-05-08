@@ -38,11 +38,11 @@
         
         <img aria-hidden="true" class="nav-logo" src="imagens/nav-logo.png">
         
-        <li class="mobile-spacing"><a href="home.html" class="nav-item">HOME</a></li>
-        <li class="mobile-spacing"><a href="aulas.html" class="nav-item">AULAS</a></li>
-        <li class="mobile-spacing"><a href="menu.html" class="nav-item">MENU</a></li>
-        <li class="mobile-spacing"><a href="perfil.html" class="nav-item special">PERFIL</a></li>
-        <li class="mobile-spacing"><a href="premium.html" class="nav-item premium">PLANOS</a></li>
+        <li class="mobile-spacing"><a href="home.php" class="nav-item">HOME</a></li>
+        <li class="mobile-spacing"><a href="aulas.php" class="nav-item">AULAS</a></li>
+        <li class="mobile-spacing"><a href="menu.php" class="nav-item">MENU</a></li>
+        <li class="mobile-spacing"><a href="perfil.php" class="nav-item special">PERFIL</a></li>
+        <li class="mobile-spacing"><a href="premium.php" class="nav-item premium">PLANOS</a></li>
         
     </ul>
     
@@ -209,7 +209,7 @@
                             <p class="texto_dentrodasecao">Conect-se com outros assinantes premium,compartilhe experiências e colabore em projetos inovadores.</p>
                             <i class="fa-solid fa-comments custom-icon" style="color:white"></i>
                         </div>
-                        <div class="feature">
+   asd                     <div class="feature">
                             <h3 class="titulo_secao">Sem anúncios</h3>
                             <p class="texto_dentrodasecao">Navegue livremente pela nossa plataforma,sem se preocupar com propagandas ou interrupções.</p>
                             <i class="fa-regular fa-circle-xmark custom-icon2" style="color:white" ></i>

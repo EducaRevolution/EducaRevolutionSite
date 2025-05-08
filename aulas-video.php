@@ -32,11 +32,11 @@
             
             <img aria-hidden="true" class="nav-logo" src="imagens/nav-logo.png">
             
-            <li class="mobile-spacing"><a href="home.html" class="nav-item">HOME</a></li>
-            <li class="mobile-spacing"><a href="aulas.html" class="nav-item">AULAS</a></li>
-            <li class="mobile-spacing"><a href="menu.html" class="nav-item">MENU</a></li>
-            <li class="mobile-spacing"><a href="perfil.html" class="nav-item special">PERFIL</a></li>
-            <li class="mobile-spacing"><a href="premium.html" class="nav-item premium">PLANOS</a></li>
+            <li class="mobile-spacing"><a href="home.php" class="nav-item">HOME</a></li>
+            <li class="mobile-spacing"><a href="aulas.php" class="nav-item">AULAS</a></li>
+            <li class="mobile-spacing"><a href="menu.php" class="nav-item">MENU</a></li>
+            <li class="mobile-spacing"><a href="perfil.php" class="nav-item special">PERFIL</a></li>
+            <li class="mobile-spacing"><a href="premium.php" class="nav-item premium">PLANOS</a></li>
             
         </ul>
         
