@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,24 +46,45 @@
     <!--esta div é o fundo preto que aparece quando abre-se o menu do MOBILE. -->
     <div class="nav-overlay"></div>
 
-    <main>
+    <main class="video-container">
     
-        <div class="video-container">
+        <div class="video-responsive">
 
-                    <video width="1366" controls>
+                    <video controls>
                         <source src="imagens/placeholder-video.mp4" type="video/mp4">
                     </video>
-    
-            <div class="video__title">
-                <h1 id="videoTitle"></h1>
-                <!-- <button class="video__playlist-add"></button>
-                <button class="video__download"></button> -->
-            </div>
+                
+        </div>
+                
+        <div class="video__title">
+
+                <h2 id="videoTitle">VIDEO PLACE HOLDER TITLE</h2>
+
+                <div class="title__div">
+                    <button class="video__btn"><i class="fa-solid fa-list" style="color: #ffffff;"></i></button>
+                    <button class="video__btn"><i class="fa-solid fa-download" style="color: #ffffff;"></i></button>
+                </div>
 
         </div>
 
+        <div class="video-description">
 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste accusamus ex corrupti. Optio iusto, recusandae laborum voluptas tenetur ratione fugiat aliquam assumenda minima culpa libero alias vel, ex accusamus iste. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ullam adipisci debitis sit consequatur esse commodi atque, magnam blanditiis. Tempore eos eveniet libero accusantium quaerat facilis. Consequatur voluptas doloribus quae.</p>
+
+        </div>
+        
     </main>
+
+    <div class="page-content">
+
+        <section class="page__lesson">
+            <h4 class="border-bottom border-3">Atividade Proposta</h4>
+        </section>
+
+        <aside class="page__recomended">
+            <h3>Veja Mais</h3>
+        </aside>
+    </div>
 
     <!-- Rodape -->
     <footer class="text-white"> <!-- Caixa Roxa - Container -->

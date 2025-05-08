@@ -115,31 +115,86 @@ body {
     color: white;
   }
 
-
 .video-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: 80vh;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 16.5rem;
-
+    padding: 1rem;
+    margin-bottom: 4rem;
     background: linear-gradient(to right, #592EF2, #331B8C);
 }
 
-video{
+.video-responsive{
+
+    position: relative;
     width: 100%;
-    height: auto;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+
 }
 
-.video__title{
-    width: 10rem;
+.video-responsive video {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  .video__title{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    
+    width: 50%;
+    padding: 0.7rem;
+
+    border-bottom: 1px solid white;
+    
     color: white;
     font-size: 3rem;
 }
+
+.title__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video__btn{
+    background-color: #c5b8f5;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    border: 2px white solid;
+    padding: 0.01rem 1rem;
+    margin-left: 1rem;
+}
+
+.video-description{
+    padding: 1rem;
+    margin-top:1rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.page-content{
+    display: grid;
+    margin: 0 10%;
+    grid-template-columns: repeat(2, 0.4fr);
+    gap: 10rem;
+}
+
+.page__lesson{
+    background: black;
+    color: white;
+    text-align: center;
+}
+
 
 
 
@@ -307,6 +362,13 @@ address{
 @media screen and (max-width: 560px){
     html{
         font-size:12px;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    html{
+        font-size:10px;
     }
 
 }
