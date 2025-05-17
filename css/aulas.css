@@ -262,6 +262,10 @@ main{
     padding:1em 0;
 }
 
+.aulas-link{
+    text-decoration: none;
+}
+
 .aulas__grid{
     border:#7c58ff solid 3.5px;
     border-radius: 15px;
@@ -270,6 +274,11 @@ main{
     padding: 1em;
     text-align: center;
     /* border:2px red solid; */
+}
+
+.aulas__grid:hover {
+    transform: scale(1.02);
+    border-color: #592EF2;
 }
 
 .grid__img{
@@ -293,7 +302,7 @@ main{
 }
 
 .buttons__anchor{
-    z-index: 0;
+    z-index: 5;
     display: flex;
     position: relative;
     justify-content: center;

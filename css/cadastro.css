@@ -24,7 +24,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 996;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,6 +108,10 @@ body {
   color: white;
 }
 
+.mobile-toggle, .nav-logo{
+  display: none;
+}
+
 /* FORMULÁRIO */
 .page-content {
   display: flex;
@@ -125,6 +129,7 @@ body {
   width: 250px;
   max-width: 70%;
   min-height: 350px;
+  margin: 8rem 0;
   position: relative;
 }
 
@@ -395,26 +400,26 @@ address{
     }
     
     .mobile-toggle{
-      display: block !important;
-      position: absolute !important;
-      top: 1.5rem !important;
-      right: 4rem !important;
-      font-size: 4rem !important;
+      display: block;
+      position: absolute ;
+      top: 0;
+      right: 2.5rem ;
+      font-size: 4rem ;
       
     
-      aspect-ratio: 1 !important;
-      background: transparent !important;
-      color: black !important;
+      aspect-ratio: 1 ;
+      background: transparent ;
+      color: black ;
     
-      border:0 !important;
-      z-index: 9999 !important;
+      border:0 ;
+      z-index: 9999 ;
     }
     
     .nav-logo {
-        display: block !important;
-        width: 15rem !important;
-        margin-top: 8rem !important;
-        margin-bottom: 2rem !important;
+        display: block ;
+        width: 15rem ;
+        margin-top: 8rem ;
+        margin-bottom: 2rem ;
     }
     
     .nav-links {
@@ -430,7 +435,7 @@ address{
       background: hsla(253, 100%, 50%, 0.95);
     
       transition: transform 0.2s ease-in ;
-      z-index: 1000;
+      z-index: 1200;
     }
     
     @supports(backdrop-filter: blur(1rem)){
@@ -469,7 +474,7 @@ address{
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999; /* Abaixo do menu mas acima do conteúdo */
+      z-index: 980; /* Abaixo do menu mas acima do conteúdo */
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -482,7 +487,7 @@ address{
     
     /* Ajuste para garantir que o menu fique acima do overlay */
     .nav-links {
-      z-index: 1000;
+      z-index: 9998;
     }
     
     

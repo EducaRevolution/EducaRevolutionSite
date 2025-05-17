@@ -125,13 +125,13 @@ body {
     background-image: linear-gradient(to right, #592EF2, #331B8C);
     color: white; 
     text-align: left;
-    padding: 6rem;
+    padding: 7rem;
 }
 
 .container2{
   text-align: justify;
   margin: 0 2%;
-  width: 70%;
+  width: 90%;
   min-width: 260px;
   max-width: 620.562px;
   font-size: 1.3rem;
@@ -145,7 +145,7 @@ body {
 }
 
 /* parte do botão para cadastrar na area de bem vindo */
-.botaocadastrar {
+/* .botaocadastrar {
   position: relative;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -164,7 +164,9 @@ body {
   font-size: 15px;
   width: 115px;
   cursor: pointer;
-}
+} */
+
+/* REVISAR O FUTURO USO DESTE BOTÃO */
 
 .botaocadastrar:hover {
   transform: scale(1.05);

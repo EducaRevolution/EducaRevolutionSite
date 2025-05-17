@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "db_insano";
+$database = "db_educarevolution";
 
 $conexao = new mysqli($servername, $username, $password, $database);
 
