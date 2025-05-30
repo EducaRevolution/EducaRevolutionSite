@@ -1,0 +1,5 @@
+<div class="main__search">
+
+        <input type="text" class="search__input" placeholder="Digite aqui o que deseja achar">
+        <button class="btn__input-search"><img class="input__image" src="imagens/lupa-icone.png"></button>
+      </div>

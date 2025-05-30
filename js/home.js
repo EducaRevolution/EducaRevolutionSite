@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
         const answer = button.nextElementSibling;
@@ -88,15 +87,4 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = '';
         }
     });
-=======
-document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-
-        button.querySelector('i').classList.toggle('fa-chevron-down');
-        button.querySelector('i').classList.toggle('fa-chevron-up');
-
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-    });
->>>>>>> feature
 });
