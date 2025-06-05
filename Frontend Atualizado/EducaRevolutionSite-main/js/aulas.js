@@ -1,35 +1,17 @@
-<<<<<<< HEAD
-const starButtons = document.querySelectorAll('.yellow-star-btn');
+//DO CADASTRO
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+//DO CADASTRO
 
-//Função das Estrelas de Favorito
-starButtons.forEach(button => {
-    // Encontra a estrela amarela DENTRO deste botão específico
-    const yellowStar = button.querySelector('.buttons__icon-yellow-star');
-    let btn_on = false;
-    
-    button.addEventListener('click', function(){
-        btn_on = !btn_on;
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+  });
 
-        if(btn_on){
-            yellowStar.style.zIndex = "3";
-        }else{
-            yellowStar.style.zIndex = "1";
-        }
+  signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+  });
 
-    });
-
-    button.addEventListener('mouseenter', function() {
-        yellowStar.style.zIndex = "3";
-    });
-    
-    button.addEventListener('mouseleave', function() {
-        if(btn_on == false) {
-            yellowStar.style.zIndex = "1";
-        }
-    });
-});
-
-//Função da NAVBAR RESPONSIVA
 document.addEventListener('DOMContentLoaded', function() {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navigation = document.querySelector('.nav-links');
@@ -107,37 +89,4 @@ document.addEventListener('DOMContentLoaded', function() {
             overlay.classList.remove('active');
             document.body.style.overflow = '';
         }
-    });
-});
-
-=======
-const starButtons = document.querySelectorAll('.yellow-star-btn');
-
-
-starButtons.forEach(button => {
-    // Encontra a estrela amarela DENTRO deste botão específico
-    const yellowStar = button.querySelector('.buttons__icon-yellow-star');
-    let btn_on = false;
-    
-    button.addEventListener('click', function(){
-        btn_on = !btn_on;
-
-        if(btn_on){
-            yellowStar.style.zIndex = "3";
-        }else{
-            yellowStar.style.zIndex = "1";
-        }
-
-    });
-
-    button.addEventListener('mouseenter', function() {
-        yellowStar.style.zIndex = "3";
-    });
-    
-    button.addEventListener('mouseleave', function() {
-        if(btn_on == false) {
-            yellowStar.style.zIndex = "1";
-        }
-    });
-});
->>>>>>> feature
+    })})
